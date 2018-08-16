@@ -5,6 +5,12 @@ html {
   font-size: 16px;
 }
 
+h2 {
+  color: white;
+  opacity: 100%;
+  font-size: 36px;
+}
+
 .main-content {
   background-image: url(/Users/KellyPierduta/Dropbox/CPD/codecademy/projects/Fotomatic/resources/images/banner-landingpage.jpg);
   background-size: cover;
@@ -25,15 +31,20 @@ html {
   color: white;
 }
 
+
 .image-container {
   overflow: hidden;
 }
 
+.images-container {
+  display: flex;
+  max-width: 100%;
+  padding: 0 1%;
+}
+
 .image-container img {
   display: block;
-  width: 90%;
-  height: 65%;
-  margin: 0 auto;
+  max-width: 100%
 }
 
 .content {
@@ -361,36 +372,38 @@ header .mobile {
 
 #quotes-section {
   background-color: #f3f3f3;
+  padding: 80px 0 80px 0;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
-  font-size: 1.875rem;
+  font-size: 30px;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
+
 
 @media only screen and (max-width: 760px) {
   #quotes-section content {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
-    font-size: 1.5rem;
+  #quotes-section .quote {
+    font-size: 24px;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
